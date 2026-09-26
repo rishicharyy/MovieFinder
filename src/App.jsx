@@ -2,6 +2,7 @@ import { useState,useEffect,useRef } from "react";
 import MovieDetails from "./Components/MovieDetails";
 import Moviecard from "./Components/Moviecard";
 import "./App.css";
+import logo from "./assets/favicon.png"
 
 function App(){
 
@@ -28,7 +29,7 @@ const handleSubmit = async (e) => {
   const data = await response.json();
   setSearchTerm("");
   setError("");
- 
+
   if (data.Response == "True"){
     setMovies(data.Search);
   }else{
@@ -102,7 +103,7 @@ const handleSearchNavigation = () => {
 
       <div className="logo">
         <span className="logo-title">search</span>
-        <span><img className="logo-image"src="./src/assets/favicon.png"></img></span>
+        <span><img className="logo-image"src={logo}></img></span>
       </div>
 
       <nav className="navigation">
