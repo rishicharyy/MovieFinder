@@ -2,7 +2,7 @@ import { useState,useEffect,useRef } from "react";
 import MovieDetails from "./Components/MovieDetails";
 import Moviecard from "./Components/Moviecard";
 import "./App.css";
-import logo from "./assets/favicon.png"
+
 
 function App(){
 
@@ -103,7 +103,7 @@ const handleSearchNavigation = () => {
 
       <div className="logo">
         <span className="logo-title">search</span>
-        <span><img className="logo-image"src={logo}></img></span>
+        <span><img className="logo-image" src="/favicon.png" alt="searchR;) logo"></img></span>
       </div>
 
       <nav className="navigation">
