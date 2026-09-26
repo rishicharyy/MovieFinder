@@ -1,0 +1,129 @@
+
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.navigation {
+  display: flex;
+  gap: 28px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+.logo .logo-image{
+  width: 37px;
+}
+.logo-search {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.navigation a {
+  color: #A7A9B2;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.navigation a:hover {
+  color: #F5F5F5;
+}
+
+.search-section {
+  padding: 70px 0 50px;
+  text-align: center;
+}
+
+.search-section h1 {
+  margin: 0 0 24px;
+  font-size: 42px;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.search-box input {
+  flex: 1;
+  padding: 15px 18px;
+  background-color: #181B20;
+  border: 1px solid #2A2D33;
+  border-radius: 8px;
+  color: #F5F5F5;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.search-box input:focus {
+  border-color: #E50914;
+}
+.search-box button {
+  padding: 15px 24px;
+  background-color: #E50914;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.search-box button:hover {
+  background-color: #C70710;
+}
+.loading-message {
+  text-align: center;
+  margin: 40px 0;
+  color: #A7A9B2;
+  font-size: 15px;
+}
+
+.error-message {
+  text-align: center;
+  margin: 40px 0;
+  color: #F5F5F5;
+  font-size: 16px;
+}
+
+
+@media (max-width: 700px) {
+
+  .app {
+    padding: 0 20px;
+  }
+  .site-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navigation {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+@media (max-width: 500px) {
+
+  .search-box {
+    flex-direction: column;
+  }
+  .search-box button {
+    width: 100%;
+  }
+
+}

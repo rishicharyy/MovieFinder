@@ -1,0 +1,11 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0D0F12;
+  color: #F5F5F5;
+  font-family: "Fjalla One", sans-serif;
+}

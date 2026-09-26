@@ -1,0 +1,181 @@
+.movie-details {
+  padding: 30px 0 60px;
+}
+
+.details-header {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+}
+
+.details-poster {
+  width: 280px;
+}
+
+.details-poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+.details-info {
+  padding-top: 10px;
+}
+
+.details-info h1 {
+  margin: 0 0 16px;
+  font-size: 36px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.details-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: #A7A9B2;
+  font-size: 14px;
+}
+
+.details-meta span:not(:last-child)::after {
+  content: "•";
+  margin-left: 12px;
+}
+
+.details-genre {
+  margin: 18px 0;
+  color: #A7A9B2;
+  font-size: 15px;
+}
+
+.imdb-rating {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.imdb-rating strong {
+  color: #F5F5F5;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.imdb-rating span:first-of-type {
+  font-size: 24px;
+  font-weight: 700;
+  color: #F5F5F5;
+}
+
+.imdb-rating span:last-of-type {
+  color: #A7A9B2;
+  font-size: 13px;
+}
+.details-content {
+  margin-top: 50px;
+}
+
+.details-content h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.details-plot p {
+  margin: 0;
+  
+  color: #A7A9B2;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.details-credits {
+  margin-top: 37px;
+}
+
+.details-credits p {
+  margin: 8px 0;
+  color: #A7A9B2;
+  font-size: 14px;
+}
+
+.details-credits strong {
+  color: #F5F5F5;
+}
+
+.details-ratings {
+  margin-top: 45px;
+}
+
+.details-ratings p {
+  margin: 8px 0;
+  color: #A7A9B2;
+  font-size: 14px;
+}
+
+.details-ratings strong {
+  color: #F5F5F5;
+}
+
+.back-button {
+  margin-bottom: 30px;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  color: #A7A9B2;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #F5F5F5;
+}
+
+.imdb-link {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 11px 18px;
+  background-color: #E50914;
+  border-radius: 7px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.imdb-link:hover {
+  background-color: #C70710;
+}
+
+
+
+@media (max-width: 700px) {
+
+  .details-header {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .details-poster {
+    width: 240px;
+    justify-self: center;
+  }
+
+}
+
+@media(min-width:701px){
+
+#movie-title{
+  font-size: 67px;
+
+}
+.details-meta{
+  margin-top:50px;
+}
+.details-genre{
+  margin-top:45px;
+}
+.imdb-rating{
+  margin-top: 45px;
+}
+
+}
