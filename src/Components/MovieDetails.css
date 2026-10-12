@@ -141,10 +141,13 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  transition:all 0.2s ease ;
 }
 
 .imdb-link:hover {
-  background-color: #C70710;
+  background-color: #FFFFFF;
+  color: #C70710;
+  
 }
 
 
