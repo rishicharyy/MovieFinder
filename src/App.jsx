@@ -114,7 +114,7 @@ const handleSearchNavigation = () => {
     </header>
       {!movieClick&&(<section id="search-section" className="search-section" ref={searchSectionRef}>
 
-        <h1>Find your Movie/Shows ; )</h1>
+        <h1>Find your Movies/Shows ; )</h1>
 
         <div className="search-box">
 
