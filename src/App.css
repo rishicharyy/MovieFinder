@@ -84,7 +84,9 @@
   transition: background-color 0.2s ease;
 }
 .search-box button:hover {
-  background-color: #C70710;
+  background-color:#FFFFFF;
+  color: #E50914;
+
 }
 .loading-message {
   text-align: center;
